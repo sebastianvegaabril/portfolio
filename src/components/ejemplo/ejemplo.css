@@ -26,13 +26,13 @@ body {
     flex-direction: column;
     align-items: center;
     height: 60vh;
+    animation: nombre 1s ease-out both;
 }
 
 .presentacion h1{
     font-size: 50px;
     margin-bottom: 10px;
     text-align: center;
-    animation: nombre 1s ease-out both;
 }
 
 @keyframes nombre {
@@ -167,11 +167,6 @@ h1{
 .two{
     background-color: #002549;
 }
-
-input:focus {
-    background-color: red; /* Cambia el color del borde cuando el input está enfocado */
-}
-
 
 .container2 {
     width: 100%;
