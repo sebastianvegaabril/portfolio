@@ -2,6 +2,14 @@ import linkedin from '../../assets/linkedin.png'
 import github from '../../assets/github.png'
 
 
+function redirectLinkedin(){
+    window.open('https://www.linkedin.com/in/sebasti%C3%A1n-vega-88410223b/','_blank')
+}
+
+function redirectGithub(){
+    window.open('https://github.com/sebastianvegaabril','_blank')
+}
+
 const Ejemplo = () => {
     return (
         <>
@@ -23,8 +31,8 @@ const Ejemplo = () => {
                         </div>
 
                         <div className='links'>
-                            <img src={linkedin}></img>
-                            <img src={github}></img>
+                            <img src={linkedin} onClick={redirectLinkedin}></img>
+                            <img src={github} onClick={redirectGithub}></img>
                         </div>
 
                     </div>
@@ -35,7 +43,7 @@ const Ejemplo = () => {
                         <h1>PROYECTOS</h1>
 
                         <div className='proyectosContenedor'>
-                            
+
                         </div>
                     </div>
                 </section>

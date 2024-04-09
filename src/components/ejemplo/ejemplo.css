@@ -32,6 +32,14 @@ body {
     font-size: 50px;
     margin-bottom: 10px;
     text-align: center;
+    animation: nombre 1s ease-out both;
+}
+
+@keyframes nombre {
+    0%{
+        transform: translateY(-200px);
+        opacity: 20%;
+    }
 }
 
 .contacto{
@@ -160,7 +168,9 @@ h1{
     background-color: #002549;
 }
 
-
+input:focus {
+    background-color: red; /* Cambia el color del borde cuando el input está enfocado */
+}
 
 
 .container2 {
@@ -188,7 +198,7 @@ h1{
       rgb(18, 195, 205) 40%,
       rgb(81, 15, 151) 81%
 
-      
+
     );
   }
   
