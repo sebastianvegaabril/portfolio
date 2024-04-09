@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html::-webkit-scrollbar{
+    width: 0px;
+}
+
+body {
+
+}
+
+::selection{
+    background-color: #aa8dd6;
+}
+
+.container::-webkit-scrollbar{
+    width: 0px;
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+}
+
+.presentacion h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.contacto h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+}
+
+input, textarea{
+    background-color: rgba(255, 255, 255, 0) !important;
+    color: white;
+    width: 40vw;
+    height: 10vh;
+    border: rgba(255, 255, 255, 0.467) solid 1px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    resize: none;
+    min-width: 300px;
+
+}
+
+#inputMensaje{
+    height: 20vh;
+    padding-left: 0px;
+}
+
+#inputMensaje::placeholder,
+textarea::placeholder {
+  color:  #ccccccb5; /* Cambia el color aquí según tu preferencia */
+  margin-left: 10px;
+  position: absolute;
+  top: 1;
+}
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyectos h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.proyectosContenedor{
+    display: grid;
+    gap: 50px 50px;
+}
+
+.proyecto{
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ccccccb5;/* Cambia el color aquí según tu preferencia */
+  margin-left: 10px;
+}
+
+.presentacion p {
+    color:white;
+    font-size: large;
+    text-align: center;
+}
+
+.presentacion img {
+    width: 40px;
+    height: 40px;
+}
+
+.presentacion img:hover{
+    filter: brightness(0) saturate(100%) invert(50%) sepia(100%) hue-rotate(240deg) brightness(110%) contrast(100%);
+    cursor: pointer;
+}
+
+.links{
+    width: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+h1{
+    color: white;
+}
+
+.one{
+    background-color: #252A2B;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-image: url('../../assets/wavesNegro.svg');
+}
+
+.two{
+    background-color: #002549;
+}
+
+
+
+
+.container2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    isolation: isolate;
+    overflow: hidden;
+    background-color: #002549;
+  }
+  
+  .blob {
+    position: absolute;
+    opacity: 0.5;
+    width: 400px;
+    aspect-ratio: 1/1;
+    animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate forwards;
+    filter: blur(50px);
+    z-index: -100;
+    background: linear-gradient(
+      47deg,
+      rgb(228, 123, 154) 41%,
+      rgb(18, 195, 205) 40%,
+      rgb(81, 15, 151) 81%
+    );
+  }
+  
+  @keyframes animate {
+    0% {
+      translate: 40% -25%;
+      border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+    }
+    50% {
+      translate: 0% 13%;
+      border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+      rotate: 41deg;
+      scale: 1.15;
+    }
+    100% {
+      translate: -45% 39%;
+      border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+      rotate: -60deg;
+      scale: 1.05;
+    }
+  }
+  
+
+
+.boton{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #aa8dd6;
+padding: 10px 30px;
+border: none;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 0ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+margin-top: 10px;
+}
