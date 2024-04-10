@@ -29,11 +29,7 @@ body {
     animation: nombre 1s ease-out both;
 }
 
-.presentacion h1{
-    font-size: 50px;
-    margin-bottom: 10px;
-    text-align: center;
-}
+
 
 @keyframes nombre {
     0%{
@@ -77,15 +73,13 @@ input, textarea{
 
 #inputMensaje{
     height: 20vh;
-    padding-left: 0px;
+    padding-left: 10px;
 }
 
 #inputMensaje::placeholder,
 textarea::placeholder {
   color:  #ccccccb5; /* Cambia el color aquí según tu preferencia */
   margin-left: 10px;
-  position: absolute;
-  top: 1;
 }
 
 .proyectos{
@@ -127,6 +121,32 @@ textarea::placeholder {
 .presentacion img:hover{
     filter: brightness(0) saturate(100%) invert(50%) sepia(100%) hue-rotate(240deg) brightness(110%) contrast(100%);
     cursor: pointer;
+}
+
+.presentacion h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h1{
+    animation: colorLetra 4s infinite linear both;
+}
+
+@keyframes colorLetra{
+    0%{
+        color: white;
+    }
+    30%{
+        color: #aa8dd6;
+    }
+    75%{
+        color: #aa8dd6;
+    }
+    100%{
+        color: white;
+    }
+
 }
 
 .links{
