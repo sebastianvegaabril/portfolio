@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -254,3 +255,14 @@ align-items: center;
 cursor: pointer;
 margin-top: 10px;
 }
+
+.proyectoPeluqueria{
+    width: 70vw;
+    height: 85vh;
+    background-color: white;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }

@@ -1,6 +1,7 @@
 import linkedin from '../../assets/linkedin.png'
 import github from '../../assets/github.png'
-
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
 
 function redirectLinkedin(){
     window.open('https://www.linkedin.com/in/sebasti%C3%A1n-vega-88410223b/','_blank')
@@ -13,8 +14,6 @@ function redirectGithub(){
 const Ejemplo = () => {
     return (
         <>
-            
-
             <div className="container">
                 <section className="one">
                     <div className="presentacion">
@@ -40,10 +39,18 @@ const Ejemplo = () => {
 
                 <section className="two">
                     <div className='proyectos'>
-                        <h1>PROYECTOS</h1>
+                        <h1>PROYECTO LANDING ESTETICA A.ABRIL</h1>
 
                         <div className='proyectosContenedor'>
-
+                            <div className='proyectoPeluqueia'>
+                            <div data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mLErx6V1mw65MY03HpcLLkRvtvX-4Nbs06_-4UC-oQ&s" />
+                            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mLErx6V1mw65MY03HpcLLkRvtvX-4Nbs06_-4UC-oQ&sS'></img>
+                            <AwesomeSlider animation="cubeAnimation" transitionDelay={0}>
+                                <div data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mLErx6V1mw65MY03HpcLLkRvtvX-4Nbs06_-4UC-oQ&s" />
+                                <div data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mLErx6V1mw65MY03HpcLLkRvtvX-4Nbs06_-4UC-oQ&s" />
+                                <div data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mLErx6V1mw65MY03HpcLLkRvtvX-4Nbs06_-4UC-oQ&s" />
+                            </AwesomeSlider>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -64,6 +71,17 @@ const Ejemplo = () => {
                         </form>
                     </div>
                     <div className="blob"></div>
+                </div>
+                </section>
+
+                <section>
+                <div>
+                <AwesomeSlider animation="cubeAnimation">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mLErx6V1mw65MY03HpcLLkRvtvX-4Nbs06_-4UC-oQ&s" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mLErx6V1mw65MY03HpcLLkRvtvX-4Nbs06_-4UC-oQ&s" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mLErx6V1mw65MY03HpcLLkRvtvX-4Nbs06_-4UC-oQ&s" />
+                </AwesomeSlider>
+                                
                 </div>
                 </section>
             </div>
