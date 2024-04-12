@@ -172,17 +172,8 @@ h1{
     color: white;
 }
 
-.one{
-    background-color: #252A2B;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    background-image: url('../../assets/wavesNegro.svg');
-}
-
 .two{
-    background-color: #002549;
+    background-image: linear-gradient(#aa8dd6,#002549);
 }
 
 .container2 {
@@ -193,12 +184,12 @@ h1{
     place-items: center;
     isolation: isolate;
     overflow: hidden;
-    background-color: #002549;
+    background-image: linear-gradient(rgb(3, 37, 74),#002549);
   }
   
   .blob {
     position: absolute;
-    opacity: 0.5;
+    opacity: 0.4;
     width: 400px;
     aspect-ratio: 1/1;
     animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate forwards;
@@ -206,9 +197,9 @@ h1{
     z-index: -100;
     background: linear-gradient(
       47deg,
-      rgb(228, 123, 154) 41%,
-      rgb(18, 195, 205) 40%,
-      rgb(81, 15, 151) 81%
+      #8534ff 33%,
+      rgb(248, 47, 255) 33%,
+      rgb(204, 54, 254) 33%
 
 
     );
@@ -253,4 +244,25 @@ flex-direction: row;
 align-items: center;
 cursor: pointer;
 margin-top: 10px;
+}
+
+.one {
+  background-color: #2f2937;
+  box-shadow: 2px 2px 12px 0 rgba(0,0,0,0.58);
+   
+  background-image: 
+  url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='198'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23aa8dd6' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23aa8dd6' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
+  url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='198'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23aa8dd6' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23aa8dd6' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
+  url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='198'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23aa8dd6' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23aa8dd6' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e");
+   background-repeat: repeat-x;
+  background-size: 1600px 50%;
+  background-position: 0 130%, -50px 130%, 500px 130%;
+  
+  animation: 20s waves linear infinite forwards;
+}
+
+@keyframes waves {
+  to {
+    background-position: 1600px 130%, 3150px 130%, 5300px 130%;
+  }
 }
